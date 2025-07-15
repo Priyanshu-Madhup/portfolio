@@ -1,0 +1,68 @@
+PRIYANSHU MADHUP - MACHINE LEARNING DEVELOPER
+==============================================
+
+PERSONAL INFORMATION:
+Name: Priyanshu Madhup
+Title: Machine Learning Developer
+Email: priyanshumadhup@outlook.com
+Phone: +91 8105524040
+Location: Bengaluru, India
+GitHub: https://github.com/Priyanshu-Madhup
+LinkedIn: https://www.linkedin.com/in/priyanshu-madhup/
+Instagram: https://www.instagram.com/priyanshu_madhup
+
+EDUCATION:
+Current: B.E. in Computer Science and Engineering (Artificial Intelligence & Machine Learning)
+Institution: CMR Institute of Technology
+Duration: 2023 - 2027
+Previous: High School Graduation from Vagdevi Vilas Institutions (2009 - 2023)
+
+EXPERIENCE:
+Role: Core Technical Member
+Organization: HackerEarth Club @CMRIT
+Duration: 2023 - Present
+Responsibilities:
+- Organizing coding competitions and workshops
+- Helping students enhance problem-solving skills
+- Mentoring peers in DSA, competitive programming and AI/ML
+- Using platforms like LeetCode, HackerEarth and HackerRank
+- Fostering a tech-driven community
+
+TECHNICAL SKILLS:
+Programming Languages: Python, Java, SQL, C, JavaScript
+Machine Learning: TensorFlow, PyTorch, Scikit-learn, Keras
+Data Science: Pandas, NumPy, Matplotlib, Seaborn
+Cloud & Tools: AWS, Docker, Git, Jupyter
+Web Technologies: HTML, CSS, JavaScript, Bootstrap
+
+PROJECTS:
+1. Stock Market Analysis and Insights Generator
+   Description: Real time stock prices monitoring and prediction for next 30 days along with AI powered investment suggestions
+   Technologies: Python, Scikit-Learn, Gemini LLM, Tkinter
+   GitHub: https://github.com/Priyanshu-Madhup/stock-market-predictor
+   Demo: https://drive.google.com/file/d/10lK_Gbj1zf_qTv7LkEf_yeeJmrNN1wD0/view?usp=sharing
+
+2. Claire - AI Desktop Voice Assistant
+   Description: Automating your desktop with voice commands, live web search, and system-level execution via LLM's
+   Technologies: Python, Llama 3.3: 70b, OS automation, Web-view
+   GitHub: https://github.com/Priyanshu-Madhup/claire
+   Demo: https://drive.google.com/file/d/1vDdcy5HTULI8GpvC79XgtsHugwI9BD6a/view?usp=drive_link
+
+3. FitAI - Personalized Fitness Ecosystem
+   Description: Personalised plans generation, Personal trainer, Locate nearest gyms & parks, Exercise Demos and Local fitness events
+   Technologies: HTML CSS JS, Llama 3.3: 70b, TomTom API, Serper
+   GitHub: https://github.com/Priyanshu-Madhup/fitaifinal
+   Demo: https://drive.google.com/file/d/1IGxBH84rGzZSNAQhdmp5hJ6fg_1JeijT/view?usp=drive_link
+
+ACHIEVEMENTS:
+Projects Built: 7+
+Hackathons Participated: 5+
+Skills and Tools: 20+
+
+SPECIALIZATIONS:
+- AI/ML development with hands-on experience
+- Building intelligent systems that solve real-world problems
+- Active in tech community as mentor and organizer
+- Strong foundation in both theory and application
+- Focuses on creating intelligent solutions through machine learning and AI
+- Transforms complex data into meaningful insights

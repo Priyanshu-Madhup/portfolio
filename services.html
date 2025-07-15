@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services - Priyanshu Madhup</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Poppins Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0e0e0e;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+    .orange-text {
+      color: orange;
+    }
+    .btn-orange {
+      background-color: orange;
+      color: black;
+    }
+    .btn-outline-light:hover {
+      background-color: white;
+      color: black;
+    }
+    .service-card {
+      background-color: #1a1a1a;
+      border-radius: 15px;
+      padding: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(255, 165, 0, 0.2);
+    }
+    .service-icon {
+      font-size: 2.5rem;
+      color: orange;
+      margin-bottom: 20px;
+    }
+    .custom-hover {
+      transition: background-color 0.3s ease, color 0.3s ease;
+      border-radius: 8px;
+      padding: 8px 12px;
+    }
+    .custom-hover:hover {
+      background-color: orange;
+      color: black !important;
+    }
+    .page-header {
+      background-color: #1a1a1a;
+      padding: 60px 0;
+      border-radius: 0 0 30px 30px;
+      margin-bottom: 50px;
+    }
+    .card-link {
+      color: orange;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .card-link:hover {
+      color: #ffc107;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav gap-5">
+        <li class="nav-item"><a class="nav-link custom-hover" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link custom-hover" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active custom-hover" href="services.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link custom-hover" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link custom-hover" href="contact.html">Contact me</a></li>
+        <li class="nav-item"><a class="nav-link active custom-hover" href="knowme.html">Know Me AI</a></li>
+      </ul>
+    </div>
+    <div class="d-none d-lg-block">
+      <a class="btn btn-orange ms-3" href="mailto:your-email@example.com">Hire Me</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<header class="page-header text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold">My <span class="orange-text">Services</span></h1>
+    <p class="lead">Specialized solutions in Machine Learning, Data Science, and AI Development</p>
+  </div>
+</header>
+
+<!-- Services Section -->
+<section class="container my-5">
+  <div class="row g-4">
+    <!-- Machine Learning Model Development -->
+    <div class="col-md-6 col-lg-4">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="bi bi-robot"></i>
+        </div>
+        <h4>ML Model Development</h4>
+        <p>Custom machine learning models designed from scratch to suit your specific business needs and data challenges.</p>
+        <a href="#" class="card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+    
+    <!-- Data Analysis & Visualization -->
+    <div class="col-md-6 col-lg-4">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="bi bi-bar-chart-line"></i>
+        </div>
+        <h4>Data Analysis & Visualization</h4>
+        <p>Comprehensive data analysis services to extract actionable insights and create intuitive visualizations for decision-making.</p>
+        <a href="#" class="card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+    
+    <!-- Natural Language Processing -->
+    <div class="col-md-6 col-lg-4">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="bi bi-chat-square-text"></i>
+        </div>
+        <h4>Natural Language Processing</h4>
+        <p>NLP solutions including sentiment analysis, text classification, chatbots, and language generation systems.</p>
+        <a href="#" class="card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+    
+    <!-- Computer Vision -->
+    <div class="col-md-6 col-lg-4">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="bi bi-camera"></i>
+        </div>
+        <h4>Computer Vision Systems</h4>
+        <p>Advanced image and video processing solutions including object detection, image classification, and facial recognition.</p>
+        <a href="#" class="card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+    
+    <!-- AI Consulting -->
+    <div class="col-md-6 col-lg-4">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="bi bi-lightbulb"></i>
+        </div>
+        <h4>AI Strategy Consulting</h4>
+        <p>Expert guidance on implementing AI solutions for your business, from concept to deployment and beyond.</p>
+        <a href="#" class="card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+    
+    <!-- ML Optimization -->
+    <div class="col-md-6 col-lg-4">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="bi bi-gear"></i>
+        </div>
+        <h4>ML System Optimization</h4>
+        <p>Improve the performance, efficiency, and scalability of your existing machine learning systems and workflows.</p>
+        <a href="#" class="card-link">Learn More <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Section -->
+<section class="container my-5 py-5">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">How I <span class="orange-text">Work</span></h2>
+    <p class="lead">My approach to delivering exceptional ML and AI solutions</p>
+  </div>
+  
+  <div class="row g-4">
+    <div class="col-md-3">
+      <div class="text-center">
+        <div class="service-icon">
+          <i class="bi bi-chat-dots"></i>
+        </div>
+        <h5>Consultation</h5>
+        <p>Understanding your needs and defining project scope</p>
+      </div>
+    </div>
+    
+    <div class="col-md-3">
+      <div class="text-center">
+        <div class="service-icon">
+          <i class="bi bi-file-earmark-text"></i>
+        </div>
+        <h5>Planning</h5>
+        <p>Creating a detailed roadmap for your solution</p>
+      </div>
+    </div>
+    
+    <div class="col-md-3">
+      <div class="text-center">
+        <div class="service-icon">
+          <i class="bi bi-code-square"></i>
+        </div>
+        <h5>Development</h5>
+        <p>Building and training your custom ML models</p>
+      </div>
+    </div>
+    
+    <div class="col-md-3">
+      <div class="text-center">
+        <div class="service-icon">
+          <i class="bi bi-rocket"></i>
+        </div>
+        <h5>Deployment</h5>
+        <p>Integrating and deploying your solution</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="container my-5">
+  <div class="text-center p-5" style="background-color: #1a1a1a; border-radius: 15px;">
+    <h2 class="fw-bold mb-4">Ready to Leverage AI for Your Business?</h2>
+    <p class="lead mb-4">Let's discuss how my services can help you achieve your goals</p>
+    <a href="contact.html" class="btn btn-orange btn-lg px-4 py-2">Get in Touch</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 mt-5" style="background-color: #1a1a1a;">
+  <div class="container text-center">
+    <div class="mb-3">
+      <a href="https://www.instagram.com/priyanshu_madhup?igsh=dnk4Z3dycW1kcWp6" class="me-3 text-white" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/priyanshu-madhup/" class="me-3 text-white" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/Priyanshu-Madhup" class="me-3 text-white" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+    </div>
+    <p class="small mb-0">&copy; 2025 Priyanshu Madhup. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
