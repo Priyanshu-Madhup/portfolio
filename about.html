@@ -36,6 +36,10 @@
       background-color: orange;
       color: black !important;
     }
+    .nav-link.active {
+      background-color: orange !important;
+      color: black !important;
+    }
     .page-header {
       background-color: #1a1a1a;
       padding: 60px 0;
@@ -45,6 +49,11 @@
     .about-img {
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(255, 165, 0, 0.2);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .about-img:hover {
+      box-shadow: 0 0 30px rgba(255, 165, 0, 0.8), 0 0 60px rgba(255, 165, 0, 0.4);
+      transform: scale(1.02);
     }
     .skill-box {
       background-color: #1a1a1a;
@@ -112,7 +121,7 @@
         <li class="nav-item"><a class="nav-link custom-hover" href="services.html">Skills</a></li>
         <li class="nav-item"><a class="nav-link custom-hover" href="portfolio.html">Portfolio</a></li>
         <li class="nav-item"><a class="nav-link custom-hover" href="contact.html">Contact me</a></li>
-        <li class="nav-item"><a class="nav-link active custom-hover" href="knowme.html">Know Me AI</a></li>
+        <li class="nav-item"><a class="nav-link custom-hover" href="knowme.html">Know Me AI</a></li>
       </ul>
     </div>
     <div class="d-none d-lg-block">
@@ -133,7 +142,7 @@
 <section class="container my-5">
   <div class="row align-items-center g-5">
     <div class="col-lg-5">
-      <img src="priyanshu.jpg" alt="Priyanshu Madhup" class="img-fluid about-img">
+      <img src="priyanshu4.jpg" alt="Priyanshu Madhup" class="img-fluid about-img">
     </div>
     <div class="col-lg-7">
       <h2 class="mb-4">Hello, I'm <span class="orange-text">Priyanshu Madhup</span></h2>
