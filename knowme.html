@@ -126,15 +126,17 @@
       padding: 20px;
       border-top: 1px solid #333;
       border-radius: 0 0 20px 20px;
+      position: relative;
     }
     .chat-input {
       background-color: #2a2a2a;
       border: 2px solid #333;
       color: white;
       border-radius: 25px;
-      padding: 12px 20px;
+      padding: 12px 60px 12px 20px;
       outline: none;
       transition: all 0.3s ease;
+      width: 100%;
     }
     .chat-input:focus {
       border-color: orange;
@@ -146,24 +148,30 @@
       color: #aaa;
     }
     .send-btn {
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
       background-color: orange;
       border: none;
       color: black;
       border-radius: 50%;
-      width: 45px;
-      height: 45px;
+      width: 40px;
+      height: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: all 0.3s ease;
+      cursor: pointer;
     }
     .send-btn:hover {
       background-color: #ff8c00;
-      transform: scale(1.1);
+      transform: translateY(-50%) scale(1.1);
     }
     .send-btn:disabled {
       background-color: #666;
-      transform: none;
+      transform: translateY(-50%);
+      cursor: not-allowed;
     }
     .typing-indicator {
       display: flex;
@@ -283,7 +291,7 @@
             <i class="bi bi-robot me-2"></i>
             Priyanshu AI Assistant
           </h4>
-          <small>Powered by Groq LLaMA 3.3 & Live Web Search</small>
+          <small>Powered by LLaMA 3.3 & Live Web Search</small>
         </div>
         
         <div class="chat-messages" id="chatMessages">
@@ -301,12 +309,10 @@
         </div>
         
         <div class="chat-input-container">
-          <div class="input-group">
-            <input type="text" class="form-control chat-input" id="chatInput" placeholder="Ask me anything about Priyanshu Madhup..." maxlength="500">
-            <button class="btn send-btn" id="sendBtn" type="button">
-              <i class="bi bi-send-fill"></i>
-            </button>
-          </div>
+          <input type="text" class="chat-input" id="chatInput" placeholder="Ask me anything about Priyanshu Madhup..." maxlength="500">
+          <button class="send-btn" id="sendBtn" type="button">
+            <i class="bi bi-send-fill"></i>
+          </button>
         </div>
       </div>
     </div>
