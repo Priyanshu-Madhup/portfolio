@@ -235,10 +235,29 @@
   }
 } */
 @media only screen and (max-width: 1025px) {
+  .work-section {
+    height: auto;
+  }
   .work-container {
     align-content: normal;
   }
   .work-flex {
     height: auto;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    padding-bottom: 30px;
+  }
+  .work-box {
+    scroll-snap-align: start;
+  }
+  /* The full-bleed divider lines are positioned relative to .work-flex's
+     own width; once it becomes a horizontally scrolling carousel their
+     50000vw width would blow out the scrollable area instead of just
+     drawing a line, so drop them on mobile. */
+  .work-flex::before,
+  .work-flex::after {
+    display: none;
   }
 }

@@ -88,6 +88,13 @@ const projects = [
 
 const Work = () => {
   useEffect(() => {
+    // Pinned horizontal scroll-jacking is a desktop pattern - on mobile it
+    // burns a huge vertical scroll distance to drag fixed-width cards
+    // across, and fights the browser's native touch scrolling. Below the
+    // desktop breakpoint the cards get a plain horizontal swipe carousel
+    // instead (see Work.css), so skip the pin/scrub setup entirely.
+    if (window.innerWidth <= 1024) return;
+
     let translateX = 0;
 
     function setTranslateX() {
