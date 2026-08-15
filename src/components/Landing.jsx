@@ -16,12 +16,12 @@ const Landing = ({ children }) => {
           <div className="landing-info">
             <h3>A Passionate</h3>
             <h2 className="landing-info-h2">
-              <div className="landing-h2-1">ML Developer</div>
+              <div className="landing-h2-1">LLM Engineer</div>
               <div className="landing-h2-2">GenAI Engineer</div>
             </h2>
             <h2>
               <div className="landing-h2-info">GenAI Engineer</div>
-              <div className="landing-h2-info-1">ML Developer</div>
+              <div className="landing-h2-info-1">LLM Engineer</div>
             </h2>
           </div>
         </div>

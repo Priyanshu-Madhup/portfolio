@@ -74,6 +74,20 @@
   margin: 10px 0px;
   color: var(--accentColor);
 }
+.career-org {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.career-org img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 3px;
+  flex-shrink: 0;
+}
 .career-timeline {
   position: absolute;
   top: -50px;

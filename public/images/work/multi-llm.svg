@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0a2e" stop-color-interpolation="linearRGB"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg5)"/>
+  <g stroke="#c4b5fd" stroke-width="1.2" opacity="0.5" fill="none">
+    <line x1="300" y1="200" x2="180" y2="120"/>
+    <line x1="300" y1="200" x2="420" y2="120"/>
+    <line x1="300" y1="200" x2="160" y2="240"/>
+    <line x1="300" y1="200" x2="440" y2="240"/>
+    <line x1="300" y1="200" x2="300" y2="290"/>
+  </g>
+  <circle cx="300" cy="200" r="30" fill="#ede9fe"/>
+  <text x="300" y="207" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#3b0764" text-anchor="middle">LLM</text>
+  <circle cx="180" cy="120" r="18" fill="#f97316"/>
+  <circle cx="420" cy="120" r="18" fill="#4285f4"/>
+  <circle cx="160" cy="240" r="18" fill="#10b981"/>
+  <circle cx="440" cy="240" r="18" fill="#f43f5e"/>
+  <circle cx="300" cy="290" r="18" fill="#facc15"/>
+  <text x="40" y="345" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#f5f3ff">Multi-LLM Playground</text>
+  <text x="40" y="372" font-family="Arial, sans-serif" font-size="15" fill="#c4b5fd">Groq, OpenRouter, Gemini + Web Search</text>
+</svg>

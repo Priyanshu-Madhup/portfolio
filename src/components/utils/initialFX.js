@@ -1,10 +1,24 @@
 import { SplitText } from "gsap/SplitText";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import { smoother } from "../Navbar.jsx";
 
 export function initialFX() {
   document.body.style.overflowY = "auto";
   smoother.paused(false);
+
+  // Layout shifts as late-loading images (career logos, project covers)
+  // settle can leave the pinned Work section measured against a stale
+  // document height. Refresh only that trigger (not ScrollTrigger.refresh()
+  // globally) so the landing/character intro scroll timelines, which are
+  // mid-animation at this point, aren't recalculated and force-jumped.
+  const refreshWorkTrigger = () => ScrollTrigger.getById("work")?.refresh();
+  window.addEventListener("load", refreshWorkTrigger);
+  document.querySelectorAll(".work-image img").forEach((img) => {
+    if (!img.complete) {
+      img.addEventListener("load", refreshWorkTrigger, { once: true });
+    }
+  });
   document.getElementsByTagName("main")[0].classList.add("main-active");
   gsap.to("body", {
     backgroundColor: "#0b080c",

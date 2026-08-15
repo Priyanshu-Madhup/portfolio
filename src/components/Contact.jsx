@@ -29,7 +29,7 @@ const Contact = () => {
               Github <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/priyanshu-madhup/"
+              href="https://www.linkedin.com/in/priyanshumadhup/"
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="disable"

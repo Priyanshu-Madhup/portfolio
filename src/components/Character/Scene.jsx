@@ -12,6 +12,7 @@ import {
 } from "./utils/mouseUtils.js";
 import setAnimations from "./utils/animationUtils.js";
 import { setProgress } from "../Loading.jsx";
+import { createGlasses } from "./utils/glasses.js";
 
 const Scene = () => {
   const canvasDiv = useRef(null);
@@ -64,6 +65,9 @@ const Scene = () => {
           scene.add(character);
           headBone = character.getObjectByName("spine006") || null;
           screenLight = character.getObjectByName("screenlight") || null;
+          if (headBone) {
+            headBone.add(createGlasses());
+          }
           progress.loaded().then(() => {
             setTimeout(() => {
               light.turnOnLights();

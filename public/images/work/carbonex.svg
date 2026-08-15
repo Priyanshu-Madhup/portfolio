@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#03170d" stop-color-interpolation="linearRGB"/>
+      <stop offset="100%" stop-color="#0f5132"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg6)"/>
+  <circle cx="480" cy="90" r="120" fill="#22c55e" opacity="0.18"/>
+  <circle cx="90" cy="320" r="100" fill="#4ade80" opacity="0.15"/>
+  <rect x="90" y="110" width="420" height="150" rx="24" fill="url(#glass)" stroke="#86efac" stroke-width="1.2"/>
+  <path d="M180 190c10-30 40-45 65-35 8-25 40-30 55-8 25-5 45 15 40 38" fill="none" stroke="#bbf7d0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="180" cy="190" r="5" fill="#bbf7d0"/>
+  <circle cx="340" cy="185" r="5" fill="#bbf7d0"/>
+  <text x="40" y="330" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#ecfdf5">CarbonEx</text>
+  <text x="40" y="357" font-family="Arial, sans-serif" font-size="15" fill="#86efac">Eco-Themed Platform with Auth</text>
+</svg>
