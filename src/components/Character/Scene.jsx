@@ -55,7 +55,23 @@ const Scene = () => {
       let progress = setProgress((value) => setLoading(value));
       const { loadCharacter } = setCharacter(renderer, scene, camera);
 
+      // A slow/dropped connection can leave the fetch inside loadCharacter()
+      // pending forever without ever resolving or rejecting, which the
+      // .catch() below wouldn't see. Bail out after 20s so the loading
+      // screen can't hang indefinitely on a bad mobile connection.
+      let charSettled = false;
+      const loadTimeout = setTimeout(() => {
+        if (!charSettled) {
+          charSettled = true;
+          console.error("Character load timed out");
+          progress.clear();
+        }
+      }, 20000);
+
       loadCharacter().then((gltf) => {
+        if (charSettled) return;
+        charSettled = true;
+        clearTimeout(loadTimeout);
         if (gltf) {
           const animations = setAnimations(gltf);
           hoverDivRef.current && animations.hover(gltf, hoverDivRef.current);
@@ -78,6 +94,17 @@ const Scene = () => {
             handleResize(renderer, camera, canvasDiv, character)
           );
         }
+      }).catch((error) => {
+        if (charSettled) return;
+        charSettled = true;
+        clearTimeout(loadTimeout);
+        // If the character fails to load (e.g. crypto.subtle is unavailable
+        // outside a secure context, a network hiccup, or a decode error),
+        // the fake progress timer has no real signal to reach 100% and the
+        // loading screen would otherwise hang forever. Force it to complete
+        // so the rest of the site still becomes usable without the avatar.
+        console.error("Character failed to load:", error);
+        progress.clear();
       });
 
       let mouse = { x: 0, y: 0 },
@@ -136,6 +163,8 @@ const Scene = () => {
       animate();
 
       return () => {
+        charSettled = true;
+        clearTimeout(loadTimeout);
         clearTimeout(debounce);
         scene.clear();
         renderer.dispose();
