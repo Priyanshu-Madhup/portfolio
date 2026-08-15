@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#03150f"/>
+      <stop offset="100%" stop-color="#065f46"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg2)"/>
+  <g opacity="0.25" stroke="#6ee7b7" stroke-width="1">
+    <line x1="0" y1="80" x2="600" y2="80"/>
+    <line x1="0" y1="150" x2="600" y2="150"/>
+    <line x1="0" y1="220" x2="600" y2="220"/>
+  </g>
+  <polyline points="30,240 100,210 160,230 220,160 280,190 340,120 400,150 460,90 520,110 570,60"
+    fill="none" stroke="#34d399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="30,240 100,210 160,230 220,160 280,190 340,120 400,150 460,90 520,110 570,60 570,260 30,260"
+    fill="url(#area)"/>
+  <g fill="#a7f3d0">
+    <circle cx="220" cy="160" r="4"/>
+    <circle cx="340" cy="120" r="4"/>
+    <circle cx="460" cy="90" r="4"/>
+    <circle cx="570" cy="60" r="5"/>
+  </g>
+  <text x="40" y="330" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#ecfdf5">Stock Market Predictor</text>
+  <text x="40" y="357" font-family="Arial, sans-serif" font-size="15" fill="#6ee7b7">ML Forecasting with Random Forest &amp; Gemini AI</text>
+</svg>
